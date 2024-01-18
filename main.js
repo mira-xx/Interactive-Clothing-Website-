@@ -11,6 +11,3 @@ function funcClick() {
 function Link() {
     window.location.href ="alittlelife.html";
 }
-function backhome() {
-    window.location.href ="formative.html";
-}
