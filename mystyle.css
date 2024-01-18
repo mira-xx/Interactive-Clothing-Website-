@@ -35,14 +35,13 @@ div.title{
 
 div.leftcolumn{
   float: left;
-  width: 100%;
+  width: 70%;
   padding-right:0px;
   margin-right:0px
 }
 div.rightcolumn{
   float: right;
-  position: fixed;
-  width: 100%;
+  width: 30%;
   padding-left: 0px;
   margin-left:0px;
 }
