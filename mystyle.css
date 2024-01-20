@@ -34,7 +34,7 @@ div.title{
 }
 
 div.leftcolumn{
-  float: left;
+  clear: left;
   width: 70%;
   padding-right:0px;
   margin-right:0px
@@ -45,14 +45,8 @@ div.rightcolumn{
   padding-left: 0px;
   margin-left:0px;
 }
-@media (min-width: 600px){
-  .leftcolumn{
-    width: 50%;
-  }
-  .rightcolumn{
-    width: 50%;
-  }
-}
+
+
 .biggerrow:after {
   content: "";
   display: table;

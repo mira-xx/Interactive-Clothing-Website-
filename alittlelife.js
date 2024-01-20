@@ -8,24 +8,25 @@ function backHome() {
 }
 
 var select = document.getElementById("selectNumber");
-var options = ["1", "2", "3", "4", "5"];
-
-for(var i = 0; i < options.length; i++) {
-    var opt = options[i];
-    var el = document.createElement("option");
-    el.textContent = opt;
-    el.value = opt;
-    select.appendChild(el);
-}
-
+var options = [1, 2, 3, 4, 5];
+    for(var i = 0; i < options.length; i++) {
+        var opt = options[i];
+        var el = document.createElement("option");
+        el.textContent = opt;
+        el.value = opt;
+        select.appendChild(el);
+        var w = select.append(el);
+    }
 function multiple() {
-  var opt = options[i];
-  var el = document.createElement("option");
-  var t = 10 
-  var r = 1
-  if(el> r){
-   let c = t *el; 
+  var s = document.getElementById("option") ;
+  var t = 10;
+  var r = 1;
+  console.log(s);
+  if(s>r){
+   console.log("inside if");
+   let c = t *s; 
    document.getElementById("showingSub").innerHTML = c; 
+   console.log(c);
 } else{
    document.getElementById("showingSub").innerHTML = "$10.00"; 
 }
