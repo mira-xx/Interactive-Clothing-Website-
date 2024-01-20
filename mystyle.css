@@ -34,24 +34,27 @@ div.title{
 }
 
 div.leftcolumn{
-  clear: left;
-  width: 70%;
+  clear:right ;
+  width: 65%;
   padding-right:0px;
   margin-right:0px
 }
 div.rightcolumn{
-  float: right;
-  width: 30%;
+  clear: left;
+  width: 35%;
   padding-left: 0px;
   margin-left:0px;
 }
-
-
-.biggerrow:after {
+div.biggest::after{
+  display:block;
   content: "";
-  display: table;
-  clear: both;
 }
+/*For mobile phones*/
+@media only screen and (max-width: 620px) {
+  .menu, .main, .right 
+    width: 100%;
+}
+
 div.hotthisweek{
     width: 800px;
     height: 810px;

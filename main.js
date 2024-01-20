@@ -7,6 +7,8 @@ function funcClick() {
     var y = document.getElementById("sub2");
     y.innerHTML = "";
 }
+const emailNew = document.getElementById("review");
+const submitButton = document.getElementById("submit");
 
 function Link() {
     window.location.href ="alittlelife.html";
