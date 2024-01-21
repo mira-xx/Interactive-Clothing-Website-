@@ -7,32 +7,27 @@ function backHome() {
     window.location.href ="formative.html";
 }
 
-var select = document.getElementById("selectNumber");
-var options = [1, 2, 3, 4, 5];
-    for(var i = 0; i < options.length; i++) {
-        var opt = options[i];
-        //creating the options 1-5 drop menu 
-        var el = document.createElement("option"); 
-        el.textContent = opt;
-        el.value = opt;
-        //select and show one number 
-        select.appendChild(el);
-        console.log(select.appendChild(el)); 
-        addEventListener("onclick", (multiple) => {
-            var t = 10;
-            var r = 1;
-            if(b>r){
-                console.log("inside"); 
-                let f = t*b;
-                document.getElementById("showingSub").innerHTML = f; 
-            } else{
-                document.getElementById("showingSub").innerHTML = "$10.00"; 
-            
-            };
-            });
+//choosing a cover, taking a quantity value, and multiplication 
+var coverEl = document.querySelector('#cover');
+var quantityEl = document.querySelector('#quantity');
+var subtotalEl = document.querySelector('#subtotal');
 
-        }
-        
+coverEl.addEventListener('change',calculateTotal);
+quantityEl.addEventListener('change',calculateTotal);
+
+var cover_price = {};
+cover_price['Hardcover'] = 20 ; 
+cover_price['Paperback'] = 12 ;
+cover_price['Kindle edition'] = 6 ;
+cover_price['Audiobook'] = 2 ;
+
+function calculateTotal() {
+    var unitCost = cover_price[coverEl.value];
+    var quantity = quantityEl.value; 
+
+    subtotalEl.textContent = `Total cost: $${(unitCost * quantity)}`;
+}
+     
 // Rating 
 const stars = document.querySelectorAll(".star");
 const rating = document.getElementById("rating");

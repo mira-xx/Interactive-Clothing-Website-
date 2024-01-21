@@ -1,19 +1,25 @@
-div.left{
-  float: left;
-  width:25%;
-  height:700px; 
-  padding:20px;
-  margin-left:100px;
-  margin-top: 50px;
+div.column{ 
+  float:left;
 }
-div.right{
-  clear: right;
+.column.left{
+  width:25%; 
+  height: 100%;
+}
+#image{
+  height:100%;
+}
+.column.right{
+  float:right;
   width: 75%;
-  margin-top: 50px;
-  margin-right: 250px;
   
-
 }
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
 div.container-fluid{
     background-color: #FCB7AF;
 }
