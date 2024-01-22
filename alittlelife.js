@@ -25,7 +25,7 @@ function calculateTotal() {
     var unitCost = cover_price[coverEl.value];
     var quantity = quantityEl.value || 0 ; 
 
-    subtotalEl.textContent = `Total cost: $${(unitCost * quantity)}`;
+    subtotalEl.textContent = ` $${(unitCost * quantity)}`;
 }
      
 // Rating 

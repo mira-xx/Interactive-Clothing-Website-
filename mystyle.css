@@ -3,7 +3,7 @@ nav.navbar navbar-expand-lg bg-body-tertiary{
   margin-bottom: 0%;
 }
 div.container-fluid{
-  background-color: #FCB7AF;
+  background-color: #fadab9;
   padding-bottom: 0%;
   margin-bottom: 0%;
   padding-left: 20px;
@@ -29,7 +29,7 @@ div.title{
     padding-top: 0%;
     margin-top: 0%;
     clear: both;
-    height: 180px;
+    height: 20%;
     vertical-align: top;
     width: 100%;
 }
@@ -123,14 +123,14 @@ div.sidesection1{
     padding-right: 50px;
     padding-top: 10px;
     border-style: solid;
-    border-color:#FCB7AF;
+    border-color:#fadab9;
     border-radius: 12px;
     margin-top: 50px;
     margin-bottom: 50px;
     margin-left: 0px;
     margin-right: 20px;
     font-family:Georgia;
-    background-color: #FCB7AF;
+    background-color: #fadab9;
     color: white;
 }
 div.sidesection2{
@@ -140,14 +140,14 @@ div.sidesection2{
     padding-right: 50px;
     padding-top: 10px;
     border-style: solid;
-    border-color: #FCB7AF;
+    border-color: ;#fadab9
     border-radius:12px;
     margin-top: 50px;
     margin-bottom: 50px;
     margin-left: 0px;
     margin-right: 20px;
     font-family:Georgia;
-    background-color: #FCB7AF;
+    background-color: #fadab9;
     color: white;
 }
 div.sidesection3{
@@ -157,18 +157,18 @@ div.sidesection3{
   padding-right: 50px;
   padding-top: 10px;
   border-style: solid;
-  border-color:#FCB7AF;
+  border-color:#fadab9;
   border-radius: 12px;
   margin-top: 50px;
   margin-bottom: 50px;
   margin-left: 0px;
   margin-right: 20px;
   font-family:Georgia;
-  background-color: #FCB7AF;
+  background-color: #fadab9;
   color: white;
 }
 div.critics{
-  width: 800px;
+  width: 50%;
   height: 450px;
   padding: 10px;
   padding-left: 30px;
@@ -205,5 +205,5 @@ div.subscribe{
 
 }
 div.footer{
-    background-color: #FCB7AF;
+    background-color: #fadab9;
 }

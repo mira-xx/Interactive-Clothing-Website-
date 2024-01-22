@@ -10,7 +10,7 @@
   <link rel="stylesheet" type="text/css" href="alittlelife.css" />
 
 </head>    
-<body style="background-color:#FFE8E8;"> 
+<body style="background-color:#fcecdc;"> 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
  
 <!--NavBar-->
@@ -29,49 +29,59 @@
       </div>
     </div>
 </nav>
+
+
 <div class="row">
 <!--Fixed image on the left-->
 <div class="column left"> 
-    <img id="image" src="alittlelife.jpg" style="width:100%"/>
+    <img id="image" src="alittlelife.jpg"/>
 </div>
+
 
 <!--Right side with title, synopsis, review-->
 <div class="column right">
-  <h1>A Little Life</h1>
-  <h3>By Hanya Yanagihara</h3>
-  <p>When four classmates from a small Massachusetts college move to New York to make their way, they're broke, adrift, and buoyed only by their friendship and ambition. There is kind, handsome Willem, an aspiring actor; JB, a quick-witted, sometimes cruel Brooklyn-born painter seeking entry to the art world; Malcolm, a frustrated architect at a prominent firm; and withdrawn, brilliant, enigmatic Jude, who serves as their center of gravity.
+  <div class="description">
+  <h1 style="color: #8b0008;; font-weight:bold;">A Little Life</h1>
+  <h3 style="color:#8B0008; font-weight:bold;">By Hanya Yanagihara</h3>
+  <p style="color:#103e09">When four classmates from a small Massachusetts college move to New York to make their way, they're broke, adrift, and buoyed only by their friendship and ambition. There is kind, handsome Willem, an aspiring actor; JB, a quick-witted, sometimes cruel Brooklyn-born painter seeking entry to the art world; Malcolm, a frustrated architect at a prominent firm; and withdrawn, brilliant, enigmatic Jude, who serves as their center of gravity.
 <br> 
 <br>
         Over the decades, their relationships deepen and darken, tinged by addiction, success, and pride. Yet their greatest challenge, each comes to realize, is Jude himself, by midlife a terrifyingly talented litigator yet an increasingly broken man, his mind and body scarred by an unspeakable childhood, and haunted by what he fears is a degree of trauma that he’ll not only be unable to overcome—but that will define his life forever.</p>
 <br> 
-
-
 <!--click for more information-->
-  <p><a href="#" onclick="moreInfo()">More information about this book</a></p>  
-  <p id="more"></p>
-</div> 
+  <p><a href="#" onclick="moreInfo()" style="color:#103e09">More information about this book</a></p>  
+  <p id="more" style="color:#103e09"></p>
+  </div>
+</div> <!--description end tag-->
 
+
+<div class="price">
 <form action="insertlabel.php" id="privatelabel" method="POST">
 <!--selecting cover-->  
-<select name="cover" id="cover"required style="width:50%;">
-  <option value="">Choose a cover</option>
+<select name="cover" id="cover"required style="width:50%; background-color:#fcecdc;color:#103e09">
+  <option value>Choose a cover</option>
   <option value="Hardcover">Hardcover $20.00</option>
   <option value="Paperback">Paperback $12.00</option>
   <option value="Kindle">Kindle edition $6.00</option>
   <option value="Audiobook">Audiobook $2.00</option>
 </select>
 <br>
+<br>
 <!--selecting quantity-->
-<input type="text" name="quantity" id="quantity"required>
+<input type="text" name="quantity" id="quantity"required style="background-color: #fcecdc;color:#103e09">
+<br>
 <br>
 <!--calculating and output subtotal-->
-<p>Subtotal:<span id="subtotal"></span></p>
+<h3 style="color:#103e09">Total cost:<span id="subtotal"></span></h3>
 </form>
+</div>
+
 
 
 <!--Rating & Review-->
 <!--x/5 where x will change-->
-<div class="rating">
+<div class="rr">
+<div class="rating" style="color:#103e09;">
   <span id="rating">0</span>/5
 </div>
 <div class="stars" id="stars">
@@ -81,12 +91,13 @@
   <span class="star" data-value="4">★</span>
   <span class="star" data-value="5">★</span>
 </div>
-<p>Share your review:</p>
+<p style="color:#103e09;">Share your review:</p>
 <textarea id="review"
         placeholder="Write your review here">
 </textarea>
 <button id="submit">Submit</button>
 <div class="reviews" id="reviews"></div>
+</div>
 
 <!--end right column div tag-->
 </div>

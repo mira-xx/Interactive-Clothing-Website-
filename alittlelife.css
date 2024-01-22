@@ -2,15 +2,17 @@ div.column{
   float:left;
 }
 .column.left{
-  width:25%; 
+  width:30%; 
   height: 100%;
 }
 #image{
-  height:100%;
+  height:60%;
+  width: 55%;
+  margin: 15%;
 }
 .column.right{
   float:right;
-  width: 75%;
+  width: 70%;
   
 }
 .row::after {
@@ -19,7 +21,26 @@ div.column{
   clear: both;
 }
 
+.description {
+  font-family: Georgia;
+  font-weight: bold;
+  width: 70%;
+  margin-top: 5%;
+}
+.price{
+  font-family: Georgia;
+  font-weight: bold;
+  width: 70%;
+  margin-left: 30%;
+}
+.rr{
+  font-family: Georgia;
+  font-weight: bold;
+  width: 70%;
+  margin-left: 30%;
+  margin-bottom: 10%;
+}
 
 div.container-fluid{
-    background-color: #FCB7AF;
+    background-color: #fadab9;
 }
