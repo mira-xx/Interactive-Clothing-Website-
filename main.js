@@ -19,3 +19,22 @@ submitButton.addEventListener("click", () => {
 function Link() {
     window.location.href ="alittlelife.html";
 }
+
+//linking JSON 
+function readJSON(filepath){
+    fetch(filepath)
+    .then(response => {
+        if (!response.ok) {
+            throw new Error(`Failed to fetch JSON file. Status:${response.status}`);
+        }
+        return response.json();
+    })
+    .then(data => {
+        jsonData = data; 
+        console.log('JSON data:', jsonData);
+        console.log("json working");
+    })
+    .catch(error => {
+        console.log('Error fetching JSON:', error.message);
+    })
+}

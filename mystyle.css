@@ -31,29 +31,29 @@ div.title{
     clear: both;
     height: 180px;
     vertical-align: top;
+    width: 100%;
 }
 
 div.leftcolumn{
-  clear:right ;
+  float:left ;
   width: 65%;
   padding-right:0px;
   margin-right:0px
 }
 div.rightcolumn{
-  clear: left;
+  float: right;
   width: 35%;
   padding-left: 0px;
   margin-left:0px;
 }
-div.biggest::after{
+div.biggerrow::after{
   display:block;
   content: "";
+  clear: both;
 }
-/*For mobile phones*/
-@media only screen and (max-width: 620px) {
-  .menu, .main, .right 
-    width: 100%;
-}
+
+
+
 
 div.hotthisweek{
     width: 800px;
@@ -149,6 +149,23 @@ div.sidesection2{
     font-family:Georgia;
     background-color: #FCB7AF;
     color: white;
+}
+div.sidesection3{
+  width: 320px;
+  height: 290px;
+  padding-left: 30px;
+  padding-right: 50px;
+  padding-top: 10px;
+  border-style: solid;
+  border-color:#FCB7AF;
+  border-radius: 12px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 0px;
+  margin-right: 20px;
+  font-family:Georgia;
+  background-color: #FCB7AF;
+  color: white;
 }
 div.critics{
   width: 800px;
