@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 nav.navbar navbar-expand-lg bg-body-tertiary{
   padding-bottom: 0%;
   margin-bottom: 0%;
@@ -62,7 +66,7 @@ div.hotthisweek{
     padding-left: 30px;
     border-style: solid;
     border-width: medium;
-    border-color:#E06960;
+    border-color:#8b0008;
     border-radius: 12px;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -118,7 +122,7 @@ div.column{
   }
 div.sidesection1{
     width: 320px;
-    height: 170px;
+    height: 190px;
     padding-left: 30px;
     padding-right: 50px;
     padding-top: 10px;
@@ -126,7 +130,7 @@ div.sidesection1{
     border-color:#fadab9;
     border-radius: 12px;
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     margin-left: 0px;
     margin-right: 20px;
     font-family:Georgia;
@@ -140,10 +144,10 @@ div.sidesection2{
     padding-right: 50px;
     padding-top: 10px;
     border-style: solid;
-    border-color: ;#fadab9
+    border-color: none;
     border-radius:12px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     margin-left: 0px;
     margin-right: 20px;
     font-family:Georgia;
@@ -156,11 +160,12 @@ div.sidesection3{
   padding-left: 30px;
   padding-right: 50px;
   padding-top: 10px;
+  padding-bottom: 10px;
   border-style: solid;
   border-color:#fadab9;
   border-radius: 12px;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 10px;
+  margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 20px;
   font-family:Georgia;
@@ -174,7 +179,7 @@ div.critics{
   padding-left: 30px;
   border-style: solid;
   border-width: medium;
-  border-color:#E06960;
+  border-color:#8b0008;
   border-radius: 12px;
   margin-top: 50px;
   margin-bottom: 50px;
@@ -193,7 +198,7 @@ div.subscribe{
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #e28569;
+    background-color: #8b0008;
     color: white;
     font-family: "Georgia";
     font-weight: bold;

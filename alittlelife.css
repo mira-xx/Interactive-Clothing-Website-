@@ -40,7 +40,25 @@ div.column{
   margin-left: 30%;
   margin-bottom: 10%;
 }
-
+.star{
+  cursor: pointer;
+}
+.one{
+  color: #ffbf00;
+}
+.two{
+  color: #ffbf00;
+}
+.three{
+  color: #ffbf00;
+}
+.four{
+  color: #ffbf00;
+}
+.five{
+  color: #138808;
+}
 div.container-fluid{
     background-color: #fadab9;
 }
+
