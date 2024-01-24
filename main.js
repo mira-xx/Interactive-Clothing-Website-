@@ -40,8 +40,8 @@ function Link() {
  * @return {Promise} 
  * @throws {Error} If the fetch operation fails or the reponse is not ok
  */
-function readJSON(jsonData){
-	fetch(jsonData)
+function readJSON(){
+	fetch("data.json")
 		.then(response => {
 			if (!response.ok) {
 				throw new Error(`Failed to fetch JSON file. Status:${response.status}`);
@@ -49,9 +49,7 @@ function readJSON(jsonData){
 			return response.json();
 		})
 		.then(data => {
-			jsonData = data; 
-			console.log("JSON data:", jsonData);
-			return(data);
+			console.log("JSON data:", data);
 		})
 		.catch(error => {
 			console.log("Error fetching JSON:", error.message);

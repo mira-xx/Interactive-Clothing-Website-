@@ -1,0 +1,22 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "array",
+    "items": {
+      "type": "object",
+      "properties": {
+        "bookID": { "type": "number" },
+        "title": { "type": "string" },
+        "authors": { "type": "string" },
+        "average_rating": { "type": "number" },
+        "isbn": { "type": "number" },
+        "isbn13": { "type": "number" },
+        "language_code": { "type": "string" },
+        "num_pages": { "type": "number" },
+        "ratings_count": { "type": "number" },
+        "text_reviews_count": { "type": "number" },
+        "publication_date": { "type": "string" },
+        "publisher": { "type": "string" }
+      },
+      "required": ["bookID", "title", "authors", "average_rating", "isbn", "isbn13", "language_code", "num_pages", "ratings_count", "text_reviews_count", "publication_date", "publisher"]
+    }
+  }
