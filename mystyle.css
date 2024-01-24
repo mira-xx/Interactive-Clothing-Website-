@@ -7,7 +7,7 @@ nav.navbar navbar-expand-lg bg-body-tertiary{
   margin-bottom: 0%;
 }
 div.container-fluid{
-  background-color: #fadab9;
+  background-color: #728C69;
   padding-bottom: 0%;
   margin-bottom: 0%;
   padding-left: 20px;
@@ -17,7 +17,9 @@ ul.dropdown-menu{
   color:#556B2F;
   font-family:Georgia; 
   font-weight:bold;
-
+}
+.dropdown-item{
+  color:#fffff2
 }
 form.d-flex{
   padding:5px;
@@ -64,12 +66,13 @@ div.hotthisweek{
     height: 810px;
     padding: 10px;
     padding-left: 30px;
+    padding-bottom: 10px;
     border-style: solid;
     border-width: medium;
-    border-color:#8b0008;
+    border-color:#fffff2;
     border-radius: 12px;
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     margin-left: 50px;
     margin-right:0px;
     font-family: Georgia;
@@ -105,7 +108,7 @@ div.column{
     right: 0;
     opacity: 0;
     transition: .5s ease;
-    background-color:#fff0ad;
+    background-color:#728C69;
   }
   
   .container:hover .overlay {
@@ -127,15 +130,13 @@ div.sidesection1{
     padding-right: 50px;
     padding-top: 10px;
     border-style: solid;
-    border-color:#fadab9;
     border-radius: 12px;
     margin-top: 50px;
     margin-bottom: 10px;
     margin-left: 0px;
     margin-right: 20px;
     font-family:Georgia;
-    background-color: #fadab9;
-    color: white;
+    border-color:#8b0008;
 }
 div.sidesection2{
     width: 320px;
@@ -144,15 +145,13 @@ div.sidesection2{
     padding-right: 50px;
     padding-top: 10px;
     border-style: solid;
-    border-color: none;
+    border-color: #8b0008;
     border-radius:12px;
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 0px;
     margin-right: 20px;
     font-family:Georgia;
-    background-color: #fadab9;
-    color: white;
 }
 div.sidesection3{
   width: 320px;
@@ -162,15 +161,14 @@ div.sidesection3{
   padding-top: 10px;
   padding-bottom: 10px;
   border-style: solid;
-  border-color:#fadab9;
+  border-color:#8b0008;
   border-radius: 12px;
   margin-top: 10px;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 20px;
   font-family:Georgia;
-  background-color: #fadab9;
-  color: white;
+  
 }
 div.critics{
   width: 50%;
@@ -179,7 +177,7 @@ div.critics{
   padding-left: 30px;
   border-style: solid;
   border-width: medium;
-  border-color:#8b0008;
+  border-color:#fffff2;
   border-radius: 12px;
   margin-top: 50px;
   margin-bottom: 50px;

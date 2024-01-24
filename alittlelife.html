@@ -14,14 +14,14 @@
 <!--NavBar-->
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-      <a class="navbar-brand" style="color:#556B2F;font-family:Georgia; font-weight:bold;" href="#">Books4All</a>
+      <a class="navbar-brand" style="color:#fffff2;font-family:Georgia; font-weight:bold;" href="#">Books4All</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#" style="color:#556B2F;font-family:Georgia; font-weight:bold;" onclick="backHome()">Home</a>
+            <a class="nav-link active" aria-current="page" href="#" style="color:#fffff2;font-family:Georgia; font-weight:bold;" onclick="backHome()">Home</a>
           </li>
         </ul>
       </div>
@@ -51,13 +51,16 @@
   <p><a href="#" onclick="moreInfo()" style="color:#103e09">More information about this book</a></p>  
   <p id="more" style="color:#103e09"></p>
   </div>
+<br>
+<hr style="width:75%;">
 </div> <!--description end tag-->
 
 
 <div class="price">
+<br>
 <form action="insertlabel.php" id="privatelabel" method="POST">
 <!--selecting cover-->  
-<select name="cover" id="cover"required style="width:50%; background-color:#fcecdc;color:#103e09">
+<select name="cover" id="cover"required style="width:50%; background-color:#fffff2;color:#8B0008">
   <option value>Choose a cover</option>
   <option value="Hardcover">Hardcover $20.00</option>
   <option value="Paperback">Paperback $12.00</option>
@@ -67,12 +70,14 @@
 <br>
 <br>
 <!--selecting quantity-->
-<input type="text" name="quantity" id="quantity"required style="background-color: #fcecdc;color:#103e09" placeholder="Quantity">
+<input type="text" name="quantity" id="quantity"required style="background-color: #fffff2 ;color:#8B0008; border-color: #8B0008;" placeholder="Quantity">
 <br>
 <br>
 <!--calculating and output subtotal-->
-<h3 style="color:#103e09">Total cost:<span id="subtotal"></span></h3>
+<h3 style="color:#8B0008">Total cost:<span id="subtotal"></span></h3>
 </form>
+<br> 
+<hr style="width:75%;"> 
 </div>
 
 
@@ -82,23 +87,27 @@
 <!--Citation-->
 <!--Title:"Create a Product Review and Rating System Using HTML CSS and JavaScript" Date:28 Dec,2023 Availability:"https://www.geeksforgeeks.org/create-a-product-review-and-rating-system-using-html-css-and-javascript/"-->
 <div class="rr">
-<div class="rating" style="color:#103e09;">
+  <h3 style="color:#103e09;">Rate this book!</h3>
+<div class="rating" style="color:#103e09;font-size: 25px;">
   <span id="rating">0</span>/5
 </div>
 <div class="stars" id="stars">
-  <span class="star" data-value="1">★</span>
-  <span class="star" data-value="2">★</span>
-  <span class="star" data-value="3">★</span>
-  <span class="star" data-value="4">★</span>
-  <span class="star" data-value="5">★</span>
+  <span class="star" data-value="1" style="font-size: 30px;">★</span>
+  <span class="star" data-value="2" style="font-size: 30px;">★</span>
+  <span class="star" data-value="3" style="font-size: 30px;">★</span>
+  <span class="star" data-value="4" style="font-size: 30px;">★</span>
+  <span class="star" data-value="5" style="font-size: 30px;">★</span>
 </div>
-<p style="color:#103e09;">Share your review:</p>
+<br>
+<h3 style="color:#103e09;">Share your review:</h3>
+<br>
 <textarea id="review"
         placeholder="Write your review here">
 </textarea>
-<button id="submit">Submit</button>
+<button id="submit" style="background-color:#728C69; color:#fffff2; border-color: #728C69;">Submit</button>
 <br>
 <br> 
+<br>
 <div class="reviews" id="reviews"></div>
 </div>
 

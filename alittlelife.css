@@ -13,7 +13,6 @@ div.column{
 .column.right{
   float:right;
   width: 70%;
-  
 }
 .row::after {
   content: "";
@@ -58,7 +57,21 @@ div.column{
 .five{
   color: #138808;
 }
+#review{
+  width: 30%;
+  height: 20%;
+  background-color:#eaead3;
+  border-color:#eaead3;
+  text-align:center;
+}
+.reviews{
+  background-color: #728C69;
+  width: 50%;
+  color: #fffff2
+  
+
+}
 div.container-fluid{
-    background-color: #fadab9;
+    background-color: #728C69;
 }
 
