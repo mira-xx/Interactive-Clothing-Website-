@@ -1,5 +1,5 @@
-const userCardTemplate = document.querySelector("[data-user-template]");
-const userCardContainer = document.querySelector("[data-user-cards-container]");
+const bookInfoTemplate = document.querySelector("[data-book-template]");
+const bookInfoContainer = document.querySelector("[data-book-info-container]");
 const searchInput = document.querySelector("[data-search]");
 
 let books = [];
@@ -17,13 +17,13 @@ fetch("data.json")
 	.then(res => res.json() )
 	.then(data => {
 		books = data.map(book =>{
-			const card = userCardTemplate.content.cloneNode(true).children[0];
+			const card = bookInfoTemplate.content.cloneNode(true).children[0]; 
 			const header = card.querySelector("[data-header]");
 			const body = card.querySelector("[data-body]");
 			card.dataset.title = book.title;
 			header.textContent = book.title;
 			body.textContent = book.authors;
-			userCardContainer.appendChild(card);
+			bookInfoContainer.appendChild(card);
 			return {title: book.title, authors: book.authors, element: card};
 		});
 	});

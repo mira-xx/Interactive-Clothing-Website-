@@ -7,22 +7,22 @@ input{
     font-size: 1rem;
 
 }
-.user-card{
-    display: grid;
+.book-info{
+    display: block;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     gap: .25rem;
     margin-top: 1rem;
 }
-.card{
+.book{
     border: 1px solid black;
     background-color: white;
     padding: .5rem;
 
 }
-.card > .header{
+.book > .header{
     margin-bottom: .25rem;
 }
-.card > .body {
+.book > .body {
     font-size: .8rem;
     color: #777;
 }

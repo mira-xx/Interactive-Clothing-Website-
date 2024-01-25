@@ -1,0 +1,78 @@
+div.column{ 
+    float:left;
+  }
+  .column.left{
+    width:30%; 
+    height: 100%;
+  }
+  #image{
+    height:60%;
+    width: 55%;
+    margin: 15%;
+  }
+  .column.right{
+    float:right;
+    width: 70%;
+  }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .description {
+    font-family: Georgia;
+    font-weight: bold;
+    width: 70%;
+    margin-top: 5%;
+  }
+  .price{
+    font-family: Georgia;
+    font-weight: bold;
+    width: 70%;
+    margin-left: 30%;
+  }
+  .rr{
+    font-family: Georgia;
+    font-weight: bold;
+    width: 70%;
+    margin-left: 30%;
+    margin-bottom: 10%;
+  }
+  .star{
+    cursor: pointer;
+  }
+  .one{
+    color: #ffbf00;
+  }
+  .two{
+    color: #ffbf00;
+  }
+  .three{
+    color: #ffbf00;
+  }
+  .four{
+    color: #ffbf00;
+  }
+  .five{
+    color: #138808;
+  }
+  #review{
+    width: 30%;
+    height: 20%;
+    background-color:#eaead3;
+    border-color:#eaead3;
+    text-align:center;
+  }
+  .reviews{
+    background-color: #728C69;
+    width: 50%;
+    color: #fffff2
+    
+  
+  }
+  div.container-fluid{
+      background-color: #728C69;
+  }
+  
+  
