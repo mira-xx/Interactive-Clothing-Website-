@@ -1,10 +1,11 @@
+/* eslint-disable no-unused-vars */
 /**
  * This function will sow more information about the book when clicked. 
  * @function moreInfo
  */
 function moreInfo() {
 	const element = document.getElementById("more");
-	element.innerHTML = "First published in March 10, 2015 <br> Language: English <br> Literary Awards: Booker Prize Nominess (2015),  Dayton Literary Peace Prize Nominee for Fiction (2016),  National Book Award Finalist for Fiction (2015)";
+	element.innerHTML = "First published in August 23, 2022 <br> Genre: Fantasy, Historical Fiction <br> Language: English <br> Literary Awards: Nebula Award for Best Novel (2022), British Book Award for Fiction (2023)";
 }
 
 /**The link leads to the homepage when clicked 
@@ -122,7 +123,7 @@ submitButton.addEventListener("click", () => {
 	//check if the review input is empty and alerts the user
 	if (!review){
 		alert("Please provide a review before submitting");
-        
+		console.log(review);
 	} else{  //present the given reviews in the empty div section
 		/**
 		 * Creates new div element for a review and appends it to the past reviews container
@@ -136,4 +137,6 @@ submitButton.addEventListener("click", () => {
 		reviewsPast.appendChild(reviewElement);
 	}
 });
+
+
     

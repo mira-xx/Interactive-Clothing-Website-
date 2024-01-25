@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /**
  * This function will sow more information about the book when clicked. 
  * @function moreInfo
@@ -122,7 +123,7 @@ submitButton.addEventListener("click", () => {
 	//check if the review input is empty and alerts the user
 	if (!review){
 		alert("Please provide a review before submitting");
-        
+        console.log(review);
 	} else{  //present the given reviews in the empty div section
 		/**
 		 * Creates new div element for a review and appends it to the past reviews container

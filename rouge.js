@@ -1,15 +1,17 @@
+/* eslint-disable no-unused-vars */
 /**
  * This function will sow more information about the book when clicked. 
  * @function moreInfo
  */
 function moreInfo() {
 	const element = document.getElementById("more");
-	element.innerHTML = "First published in March 10, 2015 <br> Language: English <br> Literary Awards: Booker Prize Nominess (2015),  Dayton Literary Peace Prize Nominee for Fiction (2016),  National Book Award Finalist for Fiction (2015)";
+	element.innerHTML = "First published in September 12, 2023 <br> Genre:Horror, Fiction, Thriller <br> Language: English";
 }
 
 /**The link leads to the homepage when clicked 
  * @function backHome 
  */
+// eslint-disable-next-line no-unused-vars
 function backHome() {
 	window.location.href ="formative.html";
 }
@@ -37,10 +39,10 @@ quantityEl.addEventListener("change",calculateTotal);
  * @type {Object} types of cover available and their prices
  */
 var cover_price = {};
-cover_price["Hardcover"] = 20 ; 
-cover_price["Paperback"] = 12 ;
-cover_price["Kindle edition"] = 6 ;
-cover_price["Audiobook"] = 2 ;
+cover_price["Hardcover"] = 30 ; 
+cover_price["Paperback"] = 21 ;
+cover_price["Kindle edition"] = 10.5 ;
+cover_price["Audiobook"] = 6.7 ;
 
 /**
  * Calculates the total price of the book based on the cover and the quantity 

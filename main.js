@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /** @type {Element} The email input for subscribing */
 const emailNew = document.getElementById("sub3");
 /** @type {Element} The button element for submitting the email */
